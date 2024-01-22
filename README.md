@@ -40,7 +40,7 @@ def predict_esrb_rating(game_data):
     elif predicted_rating[0] == 3:
         return "Mature 17+"
 
-predict_esrb_rating(Minecraft)
+print(predict_esrb_rating(Minecraft))
 ```
 
 Output:
