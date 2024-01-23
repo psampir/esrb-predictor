@@ -33,7 +33,7 @@ import numpy as np
 with open('esrb-model.pkl', 'rb') as file:
     esrb_model = pickle.load(file)
 
-# Example game data (an array of content descriptor values)
+# Example game data (an array of 31 content descriptor values)
 Minecraft = np.array([0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0])
 
 # Predict ESRB rating based on game data
@@ -45,7 +45,7 @@ def predict_esrb_rating(game_data):
         return "Everyone 10+"
     elif predicted_rating[0] == 2:
         return "Teen"
-    elif predicted_rating[0] == 3:
+    else
         return "Mature 17+"
 
 print(predict_esrb_rating(Minecraft))
