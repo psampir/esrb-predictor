@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project aims to build a model can be used to predict ESRB (Entertainment Software Rating Board) ratings for video games basing on their content descriptors.
+This project aims to build a ML model which can be used to predict ESRB (Entertainment Software Rating Board) ratings for video games basing on their content descriptors.
 
 It's able to classify games into one of the following age groups:
 
@@ -12,6 +12,14 @@ It's able to classify games into one of the following age groups:
 - Mature
 
 For more information about ESRB rating categories, refer to the [ESRB Ratings Guide](https://www.esrb.org/ratings-guide/).
+
+## Machine Learning Approach
+
+The model in this project utilizes **supervised learning**, a type of machine learning. It is trained on a dataset containing game content descriptors paired with their corresponding ESRB ratings. The training process involves the model learning the patterns and relationships between content descriptors and ratings, allowing it to make accurate predictions for unseen games.
+
+## Content Descriptors
+
+See [descriptors.md](descriptors.md).
 
 ## Model Usage Example
 
@@ -25,10 +33,10 @@ import numpy as np
 with open('esrb-model.pkl', 'rb') as file:
     esrb_model = pickle.load(file)
 
-# Example game data
+# Example game data (an array of content descriptor values)
 Minecraft = np.array([0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0])
 
-# Predict ESRB rating
+# Predict ESRB rating based on game data
 def predict_esrb_rating(game_data):
     predicted_rating = esrb_model.predict(game_data.reshape(1, -1))
     if predicted_rating[0] == 0:
