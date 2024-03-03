@@ -1,4 +1,4 @@
-# Video Game Rating Predictor
+# ESRB Video Game Rating Predictor
 
 ## Overview
 
