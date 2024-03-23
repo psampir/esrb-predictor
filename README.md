@@ -9,7 +9,7 @@ It's able to classify games into one of the following age groups:
 - Everyone
 - Everyone 10+
 - Teen
-- Mature
+- Mature 17+
 
 For more information about ESRB rating categories, refer to the [ESRB Ratings Guide](https://www.esrb.org/ratings-guide/).
 
