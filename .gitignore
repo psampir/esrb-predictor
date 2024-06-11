@@ -2,3 +2,8 @@
 .DS_Store
 *.pkl
 *.pyc
+bin/
+include/
+lib/
+.jupyter/
+pyvenv.cfg
