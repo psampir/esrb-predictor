@@ -63,6 +63,8 @@ label:first-child {
 
 input {
     margin-left: auto;
+    min-width: 20px;
+    min-height: 20px;
 }
 
 button {
@@ -92,5 +94,7 @@ pre {
 }
 
 img {
+    display: flex;
     width: 100px;
+    margin: 0 auto;
 }
