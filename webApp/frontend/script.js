@@ -41,15 +41,19 @@ function submitForm() {
             switch (data.rating) {
                 case 'Everyone':
                     img.setAttribute('src', 'https://www.esrb.org/wp-content/uploads/2019/05/E.svg');
+                    img.setAttribute('alt', "Everyone");
                     break;
                 case 'Everyone 10+':
                     img.setAttribute('src', 'https://www.esrb.org/wp-content/uploads/2019/05/E10plus.svg');
+                    img.setAttribute('alt', "Everyone 10+");
                     break;
                 case 'Teen':
                     img.setAttribute('src', 'https://www.esrb.org/wp-content/uploads/2019/05/T.svg');
+                    img.setAttribute('alt', "Teen");
                     break;
                 case 'Mature 17+':
                     img.setAttribute('src', 'https://www.esrb.org/wp-content/uploads/2019/05/M.svg');
+                    img.setAttribute('alt', "Mature 17+");
                     break;
                 default:
                     img.setAttribute('src', ''); // Set a default image or leave it blank
