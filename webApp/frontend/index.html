@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESRB Predictor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <a class="title-container" href="https://github.com/psampir/ESRB-Predictor" target="_blank">
+            <div class="title">ESRB Video Game Rating Predictor</div>
+            <div class="icon-container">
+                <div class="github-icon"></div>
+            </div>
+        </a>
+        <h3>Check matching game descriptions to rate your video game using machine learning model with ~90%
+            accuracy.
+        </h3>
+        <form id="yesNoForm">
+            <div class="question">
+                <label>1. </label>
+                <label>Reference to and/or images of alcoholic beverages</label>
+                <input type="checkbox" name="q1" value="1">
+            </div>
+            <div class="question">
+                <label>2. </label>
+                <label>Discolored and/or unrealistic depictions of blood</label>
+                <input type="checkbox" name="q2" value="1">
+            </div>
+            <div class="question">
+                <label>3. </label>
+                <label>Depictions of blood</label>
+                <input type="checkbox" name="q3" value="1">
+            </div>
+            <div class="question">
+                <label>4. </label>
+                <label>Depictions of blood or the mutilation of body parts</label>
+                <input type="checkbox" name="q4" value="1">
+            </div>
+            <div class="question">
+                <label>5. </label>
+                <label>Violent actions involving cartoon-like situations and characters.<br />May include violence
+                    where a
+                    character is unharmed after the action has been inflicted</label>
+                <input type="checkbox" name="q5" value="1">
+            </div>
+            <div class="question">
+                <label>6. </label>
+                <label>Depictions or dialogue involving vulgar antics, including "bathroom" humor</label>
+                <input type="checkbox" name="q6" value="1">
+            </div>
+            <div class="question">
+                <label>7. </label>
+                <label>Reference to and/or images of illegal drugs</label>
+                <input type="checkbox" name="q7" value="1">
+            </div>
+            <div class="question">
+                <label>8. </label>
+                <label>Violent actions of a fantasy nature, involving human or non-human characters in situations
+                    easily distinguishable from real life</label>
+                <input type="checkbox" name="q8" value="1">
+            </div>
+            <div class="question">
+                <label>9. </label>
+                <label>Graphic and realistic-looking depictions of physical conflict.<br />May involve extreme
+                    and/or
+                    realistic blood, gore, weapons, and depictions of human injury and death</label>
+                <input type="checkbox" name="q9" value="1">
+            </div>
+            <div class="question">
+                <label>10. </label>
+                <label>Moderate use of profanity</label>
+                <input type="checkbox" name="q10" value="1">
+            </div>
+            <div class="question">
+                <label>11. </label>
+                <label>References to profanity, sexuality, violence, alcohol, or drug use in music</label>
+                <input type="checkbox" name="q11" value="1">
+            </div>
+            <div class="question">
+                <label>12. </label>
+                <label>Depictions or dialogue involving "adult" humor, including sexual references</label>
+                <input type="checkbox" name="q12" value="1">
+            </div>
+            <div class="question">
+                <label>13. </label>
+                <label>Some blood</label>
+                <input type="checkbox" name="q13" value="1">
+            </div>
+            <div class="question">
+                <label>14. </label>
+                <label>Some violent actions involving cartoon</label>
+                <input type="checkbox" name="q14" value="1">
+            </div>
+            <div class="question">
+                <label>15. </label>
+                <label>Some violent actions of a fantasy nature</label>
+                <input type="checkbox" name="q15" value="1">
+            </div>
+            <div class="question">
+                <label>16. </label>
+                <label>Mild to moderate use of profanity</label>
+                <input type="checkbox" name="q16" value="1">
+            </div>
+            <div class="question">
+                <label>17. </label>
+                <label>Mild references to profanity, sexuality, violence, alcohol, or drug use in music</label>
+                <input type="checkbox" name="q17" value="1">
+            </div>
+            <div class="question">
+                <label>18. </label>
+                <label>Some provocative references or materials</label>
+                <input type="checkbox" name="q18" value="1">
+            </div>
+            <div class="question">
+                <label>19. </label>
+                <label>Some scenes involving aggressive conflict</label>
+                <input type="checkbox" name="q19" value="1">
+            </div>
+            <div id="hidden" class="question">
+                <!-- <label>20. No content descriptors</label> -->
+                <input type="checkbox" name="q20" value="1">
+            </div>
+            <div class="question">
+                <label>20. </label>
+                <label>Graphic or prolonged depictions of nudity</label>
+                <input type="checkbox" name="q21" value="1">
+            </div>
+            <div class="question">
+                <label>21. </label>
+                <label>Brief and/or mild depictions of nudity</label>
+                <input type="checkbox" name="q22" value="1">
+            </div>
+            <div class="question">
+                <label>22. </label>
+                <label>Non-explicit depictions of sexual behavior, possibly including partial nudity</label>
+                <input type="checkbox" name="q23" value="1">
+            </div>
+            <div class="question">
+                <label>23. </label>
+                <label>References to sex or sexuality</label>
+                <input type="checkbox" name="q24" value="1">
+            </div>
+            <div class="question">
+                <label>24. </label>
+                <label>Player can gamble without betting or wagering real cash or currency</label>
+                <input type="checkbox" name="q25" value="1">
+            </div>
+            <div class="question">
+                <label>25. </label>
+                <label>Explicit and/or frequent use of profanity</label>
+                <input type="checkbox" name="q26" value="1">
+            </div>
+            <div class="question">
+                <label>26. </label>
+                <label>Explicit and/or frequent depictions of sexual behavior, possibly including nudity</label>
+                <input type="checkbox" name="q27" value="1">
+            </div>
+            <div class="question">
+                <label>27. </label>
+                <label>Provocative references or materials</label>
+                <input type="checkbox" name="q28" value="1">
+            </div>
+            <div class="question">
+                <label>28. </label>
+                <label>The consumption of alcoholic beverages</label>
+                <input type="checkbox" name="q29" value="1">
+            </div>
+            <div class="question">
+                <label>29. </label>
+                <label>The consumption of alcoholic and drugs beverages</label>
+                <input type="checkbox" name="q30" value="1">
+            </div>
+            <div class="question">
+                <label>30. </label>
+                <label>Scenes involving aggressive conflict. May contain bloodless dismemberment</label>
+                <input type="checkbox" name="q31" value="1">
+            </div>
+            <button type="button" onclick="submitForm()">Predict the game rating</button>
+        </form>
+        <div id="pred" class="pred">Predicted rating:</div>
+        <pre id="jsonOutput">
+        </pre>
+        </>
+        <script src="script.js"></script>
+</body>
+
+</html>

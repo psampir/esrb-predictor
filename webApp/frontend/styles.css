@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.github-icon {
+    width: 32px;
+    height: 32px;
+    background-image: url('https://creazilla-store.fra1.digitaloceanspaces.com/icons/3271892/github-icon-md.png');
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+    display: inline-block;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.title {
+    font-weight: 100;
+    font-size: 32px;
+    text-align: center;
+}
+
+h3 {
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.question {
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: black 1px solid;
+}
+
+label:first-child {
+    font-weight: bold;
+}
+
+input {
+    margin-left: auto;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 100%;
+    font-weight: bold;
+}
+
+pre {
+    display: none;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc
+}
+
+.pred {
+    margin-top: 20px;
+    display: none;
+}
+
+#hidden {
+    display: none;
+}
+
+img {
+    width: 100px;
+}
