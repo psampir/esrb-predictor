@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project aims to build a ML model which can be used to predict ESRB (Entertainment Software Rating Board) ratings for video games basing on their content descriptors.
+This project aims to build a ML model which can be used to predict ESRB (Entertainment Software Rating Board) ratings for video games **with ~90% accuracy** basing on their content descriptors.
 
 It's able to classify games into one of the following age groups:
 
@@ -56,3 +56,7 @@ Output:
 ```
 Everyone 10+
 ```
+
+## [Web App](./webApp/)
+
+You can also run this model as a web application, which provides an interactive interface for predicting ESRB ratings based on game content descriptors. The web app is built using Flask for the backend API and includes frontend files (HTML, CSS, and JS) to create a user-friendly interface.
