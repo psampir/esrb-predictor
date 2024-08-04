@@ -60,3 +60,5 @@ Everyone 10+
 ## [Web App](./webApp/)
 
 You can also run this model as a web application, which provides an interactive interface for predicting ESRB ratings based on game content descriptors. The web app is built using Flask for the backend API and includes frontend files (HTML, CSS, and JS) to create a user-friendly interface.
+
+![Web App Screenshot](./webApp/webApp.png)
