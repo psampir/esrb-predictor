@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project aims to build a ML model which can be used to predict ESRB (Entertainment Software Rating Board) ratings for video games **with ~90% accuracy** basing on their content descriptors.
+A ML model which can be used to predict ESRB (Entertainment Software Rating Board) ratings for video games **with ~90% accuracy** basing on their content descriptors.
 
 It's able to classify games into one of the following age groups:
 
